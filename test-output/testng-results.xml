@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="1" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Practice Suite" duration-ms="73252" started-at="2021-12-10T11:32:10 IST" finished-at="2021-12-10T11:33:23 IST">
+    <groups>
+    </groups>
+    <test name="Test Basics 1" duration-ms="73252" started-at="2021-12-10T11:32:10 IST" finished-at="2021-12-10T11:33:23 IST">
+      <class name="com.crm.qa.TestCases.LoginTestCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.TestCases.LoginTestCase@22eeefeb]" name="setUp" is-config="true" duration-ms="28272" started-at="2021-12-10T11:32:10 IST" finished-at="2021-12-10T11:32:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:com.crm.qa.TestCases.LoginTestCase@22eeefeb]" name="loginToApplication" duration-ms="30675" started-at="2021-12-10T11:32:38 IST" finished-at="2021-12-10T11:33:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.TestCases.LoginTestCase@22eeefeb]" name="tearDown" is-config="true" duration-ms="14189" started-at="2021-12-10T11:33:09 IST" finished-at="2021-12-10T11:33:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.TestCases.LoginTestCase -->
+      <class name="com.crm.qa.TestCases.HomePageTestCase">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.crm.qa.TestCases.HomePageTestCase@eafc191]" name="setUp" is-config="true" duration-ms="53296" started-at="2021-12-10T11:32:11 IST" finished-at="2021-12-10T11:33:04 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a id="login2" class="nav-link" href="#"> is not clickable at point (1045,40) because another element <div id="logInModal" class="modal fade show"> obscures it
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'JIBIN', ip: '192.168.65.64', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9a436589-05e7-42b6-bba9-f8797d980183, clickElement {id=31fe6337-e806-43ca-ad24-418efe84d8cf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:debuggerAddress: localhost:50198, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4912, moz:profile: C:\Users\Jibin Mathew\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, proxy: Proxy(), se:cdp: ws://localhost:50198/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (9a436589-05e7-42b6-bba9-f8797d980183)] -> xpath: //a[text()='Log in']]
+Session ID: 9a436589-05e7-42b6-bba9-f8797d980183]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a id="login2" class="nav-link" href="#"> is not clickable at point (1045,40) because another element <div id="logInModal" class="modal fade show"> obscures it
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'JIBIN', ip: '192.168.65.64', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9a436589-05e7-42b6-bba9-f8797d980183, clickElement {id=31fe6337-e806-43ca-ad24-418efe84d8cf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:debuggerAddress: localhost:50198, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4912, moz:profile: C:\Users\Jibin Mathew\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, proxy: Proxy(), se:cdp: ws://localhost:50198/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (9a436589-05e7-42b6-bba9-f8797d980183)] -> xpath: //a[text()='Log in']]
+Session ID: 9a436589-05e7-42b6-bba9-f8797d980183
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at com.crm.qa.Base.BaseClass.click(BaseClass.java:87)
+at com.crm.qa.page.LoginPage.login(LoginPage.java:42)
+at com.crm.qa.TestCases.HomePageTestCase.setUp(HomePageTestCase.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="enterContactDetails(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.crm.qa.TestCases.HomePageTestCase@eafc191]" name="enterContactDetails" duration-ms="0" started-at="2021-12-10T11:33:05 IST" data-provider="getTestData" finished-at="2021-12-10T11:33:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jibin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Set]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a id="login2" class="nav-link" href="#"> is not clickable at point (1045,40) because another element <div id="logInModal" class="modal fade show"> obscures it
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'JIBIN', ip: '192.168.65.64', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9a436589-05e7-42b6-bba9-f8797d980183, clickElement {id=31fe6337-e806-43ca-ad24-418efe84d8cf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:debuggerAddress: localhost:50198, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4912, moz:profile: C:\Users\Jibin Mathew\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, proxy: Proxy(), se:cdp: ws://localhost:50198/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (9a436589-05e7-42b6-bba9-f8797d980183)] -> xpath: //a[text()='Log in']]
+Session ID: 9a436589-05e7-42b6-bba9-f8797d980183]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a id="login2" class="nav-link" href="#"> is not clickable at point (1045,40) because another element <div id="logInModal" class="modal fade show"> obscures it
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'JIBIN', ip: '192.168.65.64', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9a436589-05e7-42b6-bba9-f8797d980183, clickElement {id=31fe6337-e806-43ca-ad24-418efe84d8cf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:debuggerAddress: localhost:50198, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4912, moz:profile: C:\Users\Jibin Mathew\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, proxy: Proxy(), se:cdp: ws://localhost:50198/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (9a436589-05e7-42b6-bba9-f8797d980183)] -> xpath: //a[text()='Log in']]
+Session ID: 9a436589-05e7-42b6-bba9-f8797d980183
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at com.crm.qa.Base.BaseClass.click(BaseClass.java:87)
+at com.crm.qa.page.LoginPage.login(LoginPage.java:42)
+at com.crm.qa.TestCases.HomePageTestCase.setUp(HomePageTestCase.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterContactDetails -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.crm.qa.TestCases.HomePageTestCase@eafc191]" name="tearDown" is-config="true" duration-ms="-1639116185122" started-at="2021-12-10T11:33:05 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.TestCases.HomePageTestCase -->
+    </test> <!-- Test Basics 1 -->
+  </suite> <!-- Practice Suite -->
+</testng-results>
