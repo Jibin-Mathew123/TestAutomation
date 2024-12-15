@@ -15,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import com.crm.qa.Base.BaseClass;
+import com.microsoft.schemas.office.visio.x2012.main.CellType;
 
 public class TestUtil extends BaseClass{
 	
@@ -23,7 +24,7 @@ public class TestUtil extends BaseClass{
 	public static Workbook workBoook;
 	public static Sheet sheet;
 	
-	public static String TEST_DATA_PATH="F:\\learnings\\Cucumber\\CRMTestAutomation\\src\\main\\java\\com\\crm\\qa\\TestData\\TestData.xlsx";
+	public static String TEST_DATA_PATH=System.getProperty("user.dir")+"\\src\\main\\java\\com\\crm\\qa\\TestData\\TestData.xlsx";
 	
 	
 	public static Object[][] getData(String sheetName)
@@ -51,7 +52,15 @@ public class TestUtil extends BaseClass{
 		{
 			for(int j=0;j<sheet.getRow(0).getLastCellNum();j++)
 			{
+				if(sheet.getRow(i+1).getCell(j).getCellType().equals(org.apache.poi.ss.usermodel.CellType.NUMERIC))
+				{
+					sheet.getRow(i+1).getCell(j).getNumericCellValue();
+				}
+				else if(sheet.getRow(i+1).getCell(j).getCellType().equals(org.apache.poi.ss.usermodel.CellType.STRING))
+				{
+				
 				data[i][j]=sheet.getRow(i+1).getCell(j).toString();
+				}
 			}
 		}
 		
